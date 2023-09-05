@@ -1,0 +1,133 @@
+:root {
+  --blue: #2b6efd;
+  --black: #212529;
+  --grey: #f8f8f8;
+  --border-color: rgba(0, 0, 0, 0.175);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', 'Noto Sans', 'Liberation Sans', Arial, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+.big__container {
+  margin: auto 2em;
+}
+
+.pricing__header {
+  text-align: center;
+  margin: 2rem 150px;
+}
+
+.pricing__header h1 {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+.pricing__header p {
+  color: grey;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  width: 100%;
+  gap: 1.5rem;
+}
+
+.pricing__card {
+  border: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  width: calc(100% / 3);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.pricing__card_header {
+  border-bottom: 1px solid var(--border-color);
+  background-color: var(--grey);
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.pricing__card_header h4 {
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+
+.pricing__card_utilities {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 85%;
+}
+
+.pricing__card_blue {
+  border-color: var(--blue);
+}
+
+.pricing__card_blue .pricing__card_content .pricing__card_header {
+  background-color: var(--blue);
+  color: white;
+}
+
+h2 {
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+ul {
+  list-style: none;
+  padding-bottom: 1rem;
+}
+
+ul li {
+  padding: 3px;
+}
+
+.light-font {
+  font-weight: 200;
+  color: grey;
+}
+
+button {
+  border-radius: 10px;
+  width: 90%;
+  padding: 10px 0px;
+  margin: 0 2rem 2rem 2rem;
+}
+
+.btn-white {
+  background-color: white;
+  border: 1px solid var(--blue);
+  color: var(--blue);
+}
+
+.btn-white:hover {
+  background-color: var(--blue);
+  color: white;
+}
+
+.btn-blue {
+  background-color: var(--blue);
+  border: 1px solid var(--blue);
+  color: white;
+}
+
+.btn-blue:hover {
+  background-color: white;
+  color: var(--blue);
+}
